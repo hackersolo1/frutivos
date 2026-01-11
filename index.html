@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutivos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Frutivos</h1>
+    </header>
+    <div class="wrapper"></div>
+    <main>
+        <div class="left">
+            <div class="chooseContainer">
+                <button class="grape">🍇</button>
+                <button class="orange">🍊</button>
+                <button class="passionFruit">🥭</button>
+            </div>
+            <div class="infoContainer">
+                <h2>Suco de uva</h2>
+                <p>Rico em antioxidantes naturais, nosso suco de uva é feito com uvas selecionadas. Sabor marcante e
+                    refrescante para seu
+                    dia.</p>
+                <a href="">Comprar</a>
+            </div>
+        </div>
+        <div class="right">
+            <button class="img" id="img">3D</button>
+            <div class="product-container">
+                <img src="garrafa-200ml.png" alt="garrada-200ml-uva">
+                <model-viewer src="garrafa-200ml.glb" class="model" camera-controls auto-rotate
+                    auto-rotate-delay="200"></model-viewer>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
